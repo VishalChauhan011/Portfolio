@@ -1,23 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blurhash/flutter_blurhash.dart';
+import 'package:portfolio_app/Components/label_container.dart';
+import 'package:portfolio_app/frosted_glass_box.dart';
+import 'package:portfolio_app/constants.dart';
 
-class EducationPage extends StatefulWidget {
+class EducationPage extends StatelessWidget {
   const EducationPage({Key? key}) : super(key: key);
 
   @override
-  _EducationPageState createState() => _EducationPageState();
-}
-
-class _EducationPageState extends State<EducationPage> {
-  @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: const[
-        BlurHash(hash: 'LK8in[8wiv*0x]R%VrtRn~V@tlRQ'),
-        Center(
-          child: Text('EDUCATION'),
+    return Container(
+      decoration: kDecoration,
+      child: Center(
+        child: FrostedGlassBox(
+          height: kHeight,
+          width: kWidth,
+          child:   Center(
+            child: Column(
+              children: [
+                const LabelContainer(label: 'Education'),
+                fDivider,
+              ],
+            ),
+          ),
         ),
-      ],
+      ),
     );
   }
 }

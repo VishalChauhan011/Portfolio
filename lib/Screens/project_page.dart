@@ -1,23 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blurhash/flutter_blurhash.dart';
+import 'package:portfolio_app/constants.dart';
+import 'package:portfolio_app/frosted_glass_box.dart';
+import 'package:portfolio_app/Components/label_container.dart';
 
-class ProjectPage extends StatefulWidget {
+class ProjectPage extends StatelessWidget {
   const ProjectPage({Key? key}) : super(key: key);
 
   @override
-  _ProjectPageState createState() => _ProjectPageState();
-}
-
-class _ProjectPageState extends State<ProjectPage> {
-  @override
   Widget build(BuildContext context) {
-    return  Stack(
-      children: const [
-        BlurHash(hash: 'LK8in[8wiv*0x]R%VrtRn~V@tlRQ'),
-        Center(
-          child: Text('PROJECT'),
+    return Container(
+      decoration: kDecoration,
+      child: Center(
+        child: FrostedGlassBox(
+          height: kHeight,
+          width: kWidth,
+          child:   Center(
+            child: Column(
+              children: [
+                const LabelContainer(label: 'Projects'),
+                fDivider,
+              ],
+            ),
+          ),
         ),
-      ],
+      ),
     );
   }
 }
+

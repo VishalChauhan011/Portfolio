@@ -37,7 +37,7 @@ class _PortfolioState extends State<Portfolio> {
             backgroundColor: Colors.transparent,
             animationCurve: Curves.easeInOut,
             animationDuration: const Duration(
-              milliseconds: 600,
+              milliseconds: 500,
             ),
             index: page,
             items:  <Widget>[
