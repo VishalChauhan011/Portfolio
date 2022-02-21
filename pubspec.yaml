@@ -37,6 +37,7 @@ dependencies:
   flutter_blurhash: ^0.6.0
   curved_navigation_bar: ^1.0.1
   font_awesome_flutter: ^9.2.0
+  url_launcher: ^6.0.18
 
 dev_dependencies:
   flutter_test:

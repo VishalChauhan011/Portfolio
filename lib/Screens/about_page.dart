@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app/Components/skills_icon.dart';
 import 'package:portfolio_app/Components/label_container.dart';
 import 'package:portfolio_app/constants.dart';
 import 'package:portfolio_app/frosted_glass_box.dart';
@@ -24,78 +25,24 @@ class AboutPage extends StatelessWidget {
                 const SizedBox(height: 20),
                 Row(
                   //crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/letter-c.png"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/cpp.png"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/python.png"),
-                        ),
-                      ),
-                    ),
+                  children: const [
+                    SkillIcon(imagePath: "letter-c.png"),
+                    SkillIcon(imagePath: "cpp.png"),
+                    SkillIcon(imagePath: "python.png"),
                   ],
                 ),
                 const SizedBox(height: 25),
                 Row(
-                  children: [
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/java.png"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/dart.png"),
-                        ),
-                      ),
-                    ),
+                  children: const [
+                    SkillIcon(imagePath: "java.png"),
+                    SkillIcon(imagePath: "dart.png"),
                   ],
                 ),
                 const SmallLabel(text:"Frame Work"),
                 const SizedBox(height: 20),
                 Row(
-                  children: [
-                    Container(
-                      margin: const EdgeInsetsDirectional.only(start: 35),
-                      width: 60,
-                      height: 60,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage("assets/images/flutter.png"),
-                        ),
-                      ),
-                    ),
+                  children: const [
+                    SkillIcon(imagePath: "flutter.png"),
                   ],
                 ),
               ],

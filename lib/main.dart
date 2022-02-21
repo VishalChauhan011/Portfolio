@@ -28,6 +28,9 @@ class _PortfolioState extends State<Portfolio> {
 
   @override
   Widget build(BuildContext context) {
+
+    precacheImage(const AssetImage("assets/images/background.jpg"), context);
+
     return MaterialApp(
       home: Scaffold(
         extendBody: true,

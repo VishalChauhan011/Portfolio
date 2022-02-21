@@ -7,7 +7,7 @@ const double kWidth = 350;
 
 const kDecoration = BoxDecoration(
   image: DecorationImage(
-    image: AssetImage("assets/images/back.jpg"),
+    image: AssetImage("assets/images/background.jpg"),
     fit: BoxFit.fill,
   ),
 );
@@ -16,10 +16,10 @@ const kDecoration = BoxDecoration(
   fontSize: 45.0,
   fontFamily: 'Nunito',
   fontWeight: FontWeight.bold,
- color: Colors.white.withOpacity(0.4),
+ color: Colors.white.withOpacity(0.7),
 );
 
- final Color fTextColor = Colors.white.withOpacity(0.4);
+ final Color fTextColor = Colors.white.withOpacity(0.7);
 
  final fDivider = Divider(
    indent: 40,

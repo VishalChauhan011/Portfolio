@@ -4,7 +4,7 @@ class SkillIcon extends StatelessWidget {
 
 
   const SkillIcon({Key?key,required this.imagePath}):super(key: key);
-  final Image imagePath;
+  final String imagePath;
 
   @override
   Widget build(BuildContext context) {
@@ -12,11 +12,13 @@ class SkillIcon extends StatelessWidget {
       margin:  const EdgeInsetsDirectional.only(start: 35),
       width: 60,
       height: 60,
-      decoration: const BoxDecoration(
+      decoration:  BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/images/letter-c.png"),
+          image: AssetImage("assets/images/$imagePath"),
         ),
       ),
     );
   }
 }
+
+
