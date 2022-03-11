@@ -26,7 +26,7 @@ class ConnectPage extends StatelessWidget {
                     children: const [
                       SocialButton(
                         imagePath: "github.png",
-                        link: 'https://github.com/vishalchauhan69',
+                        link: 'https://github.com/vishalChauhan011',
                       ),
                       SizedBox(width: 20),
                       SocialButton(

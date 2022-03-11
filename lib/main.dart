@@ -32,6 +32,7 @@ class _PortfolioState extends State<Portfolio> {
     precacheImage(const AssetImage("assets/images/background.jpg"), context);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         extendBody: true,
         body: pageOption[page],
